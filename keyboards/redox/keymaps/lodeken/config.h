@@ -18,17 +18,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 // // default but used in macros
-#undef TAPPING_TERM
-#define TAPPING_TERM 220
+// #undef TAPPING_TERM
+#define TAPPING_TERM 270
 
-#define TAPPING_TERM_PER_KEY
-#define TAPPING_FORCE_HOLD_PER_KEY
+// #define TAPPING_TERM_PER_KEY
+// #define TAPPING_FORCE_HOLD_PER_KEY
 
 // // Prevent normal rollover on alphas from accidentally triggering mods.
 #define IGNORE_MOD_TAP_INTERRUPT
 
 // newly added on suggestion here https://getreuer.info/posts/keyboards/achordion/index.html#achordion_eager_mod
-#define PERMISSIVE_HOLD
+// #define PERMISSIVE_HOLD
 
 // Recommended for heavy chording.
 #define QMK_KEYS_PER_SCAN 4
@@ -77,3 +77,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define CAPS_WORD_IDLE_TIMEOUT 3000 // Turn off Caps Word after 3 seconds.
 
 // #define BILATERAL_COMBINATIONS 5000
+
+#define DYNAMIC_TAPPING_TERM_INCREMENT 5

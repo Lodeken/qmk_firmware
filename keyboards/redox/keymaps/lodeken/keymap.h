@@ -28,6 +28,7 @@ void num_word_enable(void);
 void num_word_disable(void);
 
 // Four letter keycodes so formatting doesn't move around
+// Aliases to match the string length to standard 7 char length
 #define KC_0000 KC_0
 #define KC_0001 KC_1
 #define KC_0002 KC_2
@@ -70,7 +71,8 @@ enum layers {
   _NUM,
 //   _NUM2,
 //   _SYM,
-  _NAV,
+  _NAV_L,
+  _NAV_R,
 //   _FUN,
 //   _TEST,
 };
